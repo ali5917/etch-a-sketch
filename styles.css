@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(15, 15, 10);
+    color: white;
+}
+
+.head {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    font-size: 90px;
+    transition: all ease 0.5s;
+}
+
+.head:hover {
+    text-shadow: 0 0 15px rgba(228, 228, 127, 0.8);
+    letter-spacing: 5px;
+}
+
+.credit {
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+
+.credit:hover {
+    text-shadow: 0 0 15px rgba(228, 228, 127, 0.8);
+    letter-spacing: 5px;
+}
+
+#btn {
+    margin-top: 100px;
+    background: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    box-shadow: 0 0 10px 5px rgba(228, 228, 127, 0.2);
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#select-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    background-color: rgb(15, 15, 10);
+    color: white;
+}
+
+#select-container h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+    transition: all ease 0.5s;
+}
+
+#select-container h1:hover {
+    text-shadow: 0 0 15px rgba(228, 228, 127, 0.8);
+    letter-spacing: 5px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.list {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.list button {
+    background: none;
+    width: 180px;
+    border: 2px solid white;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    box-shadow: 0 0 10px 5px rgba(228, 228, 127, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.list button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.input1-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input1-container p {
+    font-family: 'Cinzel', serif;
+    font-size:30px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+.input1-text {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: rgb(128, 128, 1);
+    border: solid 2px rgb(128, 128, 1);
+    padding: 2px 15px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.input1-text:focus {
+    outline: none;
+    border: solid 2px rgb(243, 243, 96);
+    box-shadow: 0 0 8px 5px rgb(161, 161, 24);
+    transition: all ease 0.2s;
+}
+

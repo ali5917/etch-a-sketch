@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./icon.png" type="image/png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main">
+        <p class = head>Etch-a-Sketch</p>
+        <a class="credit" href="https://github.com/ali5917" target="_blank">By Ali Kashif</a>
+        <button onclick="scrollToSelect()" id="btn">Let's Go</button>  
+    </div>
+
+    <div id="select-container">
+        <h1>Select Grid Dimensions</h1>
+        <div class="list-container">
+            <div class="list 2">
+                <button class="8">8 x 8</button>
+                <button class="16">16 x 16</button>
+                <button class="32">32 x 32</button>
+            </div>
+            <div class="list 2">
+                <button class="46">46 x 46</button>
+                <button class="60">60 x 60</button>
+                <button class="80">80 x 80</button>
+            </div>
+        </div>
+        <div class="input1-container">
+            <p>Make a custom grid?</p>
+            <input class="input1-text" type="text" maxlength="2" placeholder="1 - 100">
+        </div>
+    </div>
+
+    
+    
+    <script src="./sketch.js"></script>
+</body>
+</html>
