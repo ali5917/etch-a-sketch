@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./icon.png" type="image/png">
+    <link rel="icon" href="./images/icon.png" type="image/png">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,23 +26,40 @@
     <div id="select-container">
         <h1>Select Grid Dimensions</h1>
         <div class="list-container">
-            <div class="list 2">
-                <button class="8">8 x 8</button>
-                <button class="16">16 x 16</button>
-                <button class="32">32 x 32</button>
+            <div class="list 1">
+                <button class="sizeBtn" id="8">8 x 8</button>
+                <button class="sizeBtn" id="16">16 x 16</button>
+                <button class="sizeBtn" id="24">24 x 24</button>
             </div>
             <div class="list 2">
-                <button class="46">46 x 46</button>
-                <button class="60">60 x 60</button>
-                <button class="80">80 x 80</button>
+                <button class="sizeBtn" id="32">32 x 32</button>
+                <button class="sizeBtn" id="46">46 x 46</button>
+                <button class="sizeBtn" id="60">60 x 60</button>
             </div>
         </div>
         <div class="input1-container">
             <p>Make a custom grid?</p>
-            <input class="input1-text" type="text" maxlength="2" placeholder="1 - 100">
+            <div class="grid-text-container">
+                <input class="grid-text" type="text" maxlength="2" placeholder="1 - 60">
+                <button class="grid-submit">Submit</button>
+            </div>
         </div>
     </div>
 
+    <div id="sketch-section">
+        <p class="heading">Sketch Pad <span class="head-size">20 x 20</span></p>
+        <div class="sketch-container">
+            <div class="sketch-tools">
+                <input type="color" class="c-picker">
+                <button class="btn1">Classic</button>
+                <button class="btn2">Rainbow</button>
+                <button class="btn3">Eraser</button>
+                <button onclick="clearGrid()" >Clear</button>
+                <button onclick="scrollToSelect()" >Change Size</button>
+            </div>
+            <div class="outline-container"></div>
+        </div>
+    </div>
     
     
     <script src="./sketch.js"></script>

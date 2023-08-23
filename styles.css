@@ -106,7 +106,7 @@
 .list button {
     background: none;
     width: 180px;
-    border: 2px solid white;
+    border: solid 2px rgb(228, 228, 127);
     padding: 10px 25px;
     color: white;
     text-decoration: none;
@@ -138,21 +138,169 @@
     text-align: center;
     transition: all ease 0.5s;
 }
-.input1-text {
+.grid-text {
     font-size: 30px;
     border: 2px solid black;
     border-radius: 8px;
     color: rgb(128, 128, 1);
-    border: solid 2px rgb(128, 128, 1);
-    padding: 2px 15px;
+    border: solid 2px rgb(206, 206, 51);
+    padding: 5px 15px;
     font-family: 'Cinzel', serif;
     text-align: center;
 }
 
-.input1-text:focus {
+.grid-text:focus {
     outline: none;
     border: solid 2px rgb(243, 243, 96);
     box-shadow: 0 0 8px 5px rgb(161, 161, 24);
     transition: all ease 0.2s;
 }
+
+.grid-text-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.grid-submit {
+    background: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 10px 5px rgba(228, 228, 127, 0.2);
+    transition: all 0.3s ease;
+}
+
+.grid-submit:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#sketch-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 10);
+}
+
+.sketch-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 10);
+    gap: 3em;
+}
+
+#sketch-section p {
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    font-size: 70px;
+    transition: all ease 0.5s;
+}
+
+.head-size {
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: rgb(228, 228, 127);
+    font-size: 30px;
+    transition: all ease 0.5s;
+}
+
+#sketch-section p:hover {
+    text-shadow: 0 0 15px rgba(228, 228, 127, 0.8);
+    letter-spacing: 5px;
+}
+
+.outline-container {
+    width: 40%;
+    height: 95%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: url('./images/brush.png'), auto;
+    box-shadow: 0 0 13px rgba(255, 255, 255, 0.856);
+    border: 2px solid rgb(228, 228, 127);
+}
+
+.square {
+    box-sizing: border-box;
+}
+
+.sketch-tools {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(228, 228, 127);
+    padding: 0px 30px;
+    gap: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.432);
+}
+
+.sketch-tools button {
+    background: none;
+    width: 180px;
+    border: 2px solid rgb(228, 228, 127);
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 10px 5px rgba(228, 228, 127, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.sketch-tools button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.c-picker {
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;  
+    border: solid 2px rgb(228, 228, 127);
+    box-shadow: 0 0 10px 5px rgba(228, 228, 127, 0.2);
+    transition: all ease 0.3s;
+}
+
+.c-picker::-webkit-color-swatch-wrapper {
+    padding: 0; 
+    border: none; 
+}
+
+.c-picker::-webkit-color-swatch {
+    border: none; 
+    border-radius: 50%;
+}
+
+.c-picker:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
+
 
