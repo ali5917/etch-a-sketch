@@ -32,7 +32,7 @@ const sizeSubmit = document.querySelector('.grid-submit');
 sizeSubmit.addEventListener('click', () => {
     let usrInput = sizeInput.value;
     if (isNaN(usrInput) || usrInput < 1 || usrInput > 60) {
-        alert('WTF');
+        alert('Invalid Input');
     }
     else {
         hBoxes = usrInput;
